@@ -9,6 +9,7 @@ public class app {
         int age = 0;
         float height = 0;
         float weight = 0;
+        String sport = "";
 
         ExerciseData data = new ExerciseData();
 
@@ -16,32 +17,40 @@ public class app {
         try {
             do {
                 //Begin adding Athlete data
+                if(data.athleteList.size() >=1){
+                    System.out.println("what is the name of the Athlete?");
+                    name =input.nextLine();
+                }
+                else{
                 System.out.print("What is the name of your first Athlete? :");
                 name = input.nextLine();
-                System.out.print("What is their age? :");
-                age = Integer.parseInt(input.nextLine());
-                System.out.print("What is their height? (in inches) :");
-                height = Float.parseFloat(input.nextLine());
-                System.out.print("what is their weight? :");
-                weight = Float.parseFloat(input.nextLine());
+                }
 
-                Athlete athlete = new Athlete(name, age, height, weight);
+                System.out.print("What is the age? ");
+                age = Integer.parseInt(input.nextLine());
+                System.out.print("What is the height? (in inches) ");
+                height = Float.parseFloat(input.nextLine());
+                System.out.print("what is the weight? ");
+                weight = Float.parseFloat(input.nextLine());
+                System.out.print("What is the sport of choice? ");
+                sport = input.nextLine();
+
+                Athlete athlete = new Athlete(name, age, height, weight, sport);
+                data.athleteList.add(athlete);
 
                 System.out.println("would you like to add another Athlete?");
                 choice = input.nextLine();
 
                 if(choice.equalsIgnoreCase("no"))
                 {
-                    System.out.println("goodbye");
                     break;
                 }
 
             }while(choice.equalsIgnoreCase("yes"));
-            Athlete athlete = new Athlete(name, age, height, weight);
-            data.athleteList.add(athlete);
+
 
             for (int i = 0; i < data.athleteList.size(); i++) {
-                System.out.println(athlete.toString());
+                System.out.println(data.athleteList.get(i));
             }
 
         } catch (NumberFormatException e) {
