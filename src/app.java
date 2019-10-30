@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class app {
 
+    public void addAthlete(){
+
+    }
+
+    public void addExercise(){
+
+    }
+
+    
+
+
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         String choice = "";
@@ -50,9 +61,9 @@ public class app {
                     if (choice.equalsIgnoreCase("yes"))
                     {
                         System.out.println("Date Exercised: ");
-                        long date = Long.parseLong(input.nextLine());
+                        String date = input.nextLine();
                         System.out.println("time exercising: ");
-                        long time = Long.parseLong(input.nextLine());
+                        String time = input.nextLine();
                         System.out.println("what exercise did you do?");
                         String exerciseName = input.nextLine();
                         System.out.println("How many reps?");

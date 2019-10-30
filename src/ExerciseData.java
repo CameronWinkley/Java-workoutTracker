@@ -10,8 +10,8 @@ public class ExerciseData {
     private String name;
     private int reps;
     private String nameOfExercise;
-    private long duration;
-    private long date;
+    private String duration;
+    private String date;
     private double pounds;
     public List<Athlete> athleteList = new ArrayList<Athlete>();
     public List<ExerciseData> eData = new ArrayList<ExerciseData>();
@@ -22,7 +22,7 @@ public class ExerciseData {
 
     }
 
-    public ExerciseData( String eName,int reps,double lbs, long time, long date){
+    public ExerciseData( String eName,int reps,double lbs, String time, String date){
         this.reps = reps;
         nameOfExercise = eName;
         this.duration = time;
@@ -47,19 +47,19 @@ public class ExerciseData {
         return nameOfExercise;
     }
 
-    public void setDuration(long time) {
+    public void setDuration(String time) {
         duration = time;
     }
 
-    public long getDuration(){
+    public String getDuration(){
         return duration;
     }
 
-    public void setDate(long date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public long getDate() {
+    public String getDate() {
         return date;
     }
 
