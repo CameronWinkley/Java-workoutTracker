@@ -1,3 +1,5 @@
+import java.sql.Time;
+import java.util.Date;
 import java.util.Scanner;
 
 public class app {
@@ -41,9 +43,27 @@ public class app {
                 System.out.println("would you like to add another Athlete?");
                 choice = input.nextLine();
 
-                if(choice.equalsIgnoreCase("no"))
-                {
-                    break;
+                if(choice.equalsIgnoreCase("no")) {
+                    System.out.println("Would you like to add an exercise?");
+                    choice = input.nextLine();
+
+                    if (choice.equalsIgnoreCase("yes"))
+                    {
+                        System.out.println("Date Exercised: ");
+                        long date = Long.parseLong(input.nextLine());
+                        System.out.println("time exercising: ");
+                        long time = Long.parseLong(input.nextLine());
+                        System.out.println("what exercise did you do?");
+                        String exerciseName = input.nextLine();
+                        System.out.println("How many reps?");
+                        int reps = Integer.parseInt(input.nextLine());
+                        System.out.println("Enter the weight used: ");
+                        double pounds = Double.parseDouble(input.nextLine());
+
+                        ExerciseData data1 = new ExerciseData(exerciseName, reps,pounds, time, date);
+
+                        data1.eData.add(data1);
+                    }
                 }
 
             }while(choice.equalsIgnoreCase("yes"));
