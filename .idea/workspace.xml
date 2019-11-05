@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a2ffff23-1b03-4139-9ea4-93a7fbee1960" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workoutTracker/ExerciseData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workoutTracker/ExerciseData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/workoutTracker/app.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workoutTracker/app.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExerciseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExerciseData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +26,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,7 +74,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
