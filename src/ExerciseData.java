@@ -13,14 +13,11 @@ public class ExerciseData {
     private String duration;
     private String date;
     private double pounds;
-    public List<Athlete> athleteList = new ArrayList<Athlete>();
-    public List<ExerciseData> eData = new ArrayList<ExerciseData>();
-
-    public ExerciseData()
-    {
+    public List<Athlete> athleteList = new ArrayList<>();
+    public List<ExerciseData> eData = new ArrayList<>();
 
 
-    }
+    public ExerciseData() {}
 
     public ExerciseData( String eName,int reps,double lbs, String time, String date){
         this.reps = reps;
@@ -51,9 +48,7 @@ public class ExerciseData {
         duration = time;
     }
 
-    public String getDuration(){
-        return duration;
-    }
+    public String getDuration(){ return duration; }
 
     public void setDate(String date) {
         this.date = date;

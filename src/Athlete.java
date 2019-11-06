@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Athlete {
 
     private String name;
@@ -5,11 +8,7 @@ public class Athlete {
     private float weight;
     private float height;
     private String sport;
-
-
-    public Athlete(){
-
-    }
+    public List<Athlete> athleteList = new ArrayList<>();
 
 
     public Athlete(String name, int age, float weight, float height, String sport){
@@ -19,6 +18,7 @@ public class Athlete {
         this.height = height;
         this.sport = sport;
     }
+
 
     public void setName(String name) {
         this.name = name;
