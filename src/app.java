@@ -74,6 +74,9 @@ public class app {
             choice = input.nextLine();
 
         } while (choice.equalsIgnoreCase("Yes") || choice.equalsIgnoreCase("y"));
+
+
+
     }
 
     public static void addAthlete() {
@@ -106,6 +109,12 @@ public class app {
             athlete.athleteList.add(athlete);
             System.out.println("Athlete added");
 
+            System.out.println("current athletes:");
+            for(int i = 0; i <athlete.athleteList.size(); i++){
+                System.out.println(athlete.athleteList.get(i));
+            }
+
+            System.out.println();
             System.out.println("Do you want to add another Athlete?");
             choice = input.nextLine();
 
