@@ -1,5 +1,6 @@
 import java.sql.DriverManager;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,7 +18,10 @@ public class DBUtil {
             connection = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT * FROM xproducts;");
+            PreparedStatement preparedStatement = connection.prepareStatement("Select * from Athletes "
+            + "Where Name is ?");
+
+            preparedStatement.setString(1, name);
 
 
             while (resultSet.next()) {
