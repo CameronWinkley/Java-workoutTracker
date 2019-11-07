@@ -21,7 +21,7 @@ public class DBUtil {
             PreparedStatement preparedStatement = connection.prepareStatement("Select * from Athletes "
             + "Where Name is ?");
 
-            preparedStatement.setString(1, name);
+           // preparedStatement.setString(1, name);
 
 
             while (resultSet.next()) {

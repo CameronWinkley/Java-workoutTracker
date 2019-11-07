@@ -11,7 +11,7 @@ public class Athlete {
     public List<Athlete> athleteList = new ArrayList<>();
 
 
-    public Athlete(String name, int age, float weight, float height, String sport){
+   public Athlete(String name, int age, float weight, float height, String sport){
         this.name = name;
         this.age = age;
         this.weight = weight;
